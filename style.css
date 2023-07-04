@@ -1,0 +1,33 @@
+
+body{
+  body-align:center
+}
+
+
+fieldset {
+    backdrop-filter: lavender;
+    background-color:whitesmoke;
+  }
+  
+  legend {
+    background-color: rgb(209, 6, 231);
+    text-decoration: mediumpurple;
+    color: lavender;
+    padding: 5px 10px;
+  }
+  
+  input {
+    margin: 5px;
+    background-color: lavender;
+  }
+
+  form{text-align: center;
+    background-color:lavender;
+    width: 50%;
+    height: 50px;
+    font-weight: bold;
+    padding: 5px;}
+
+    body{
+      text-align: left;
+    }
