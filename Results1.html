@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formatted Table</title>
+  <style>
+
+body {
+  background-image: url('Background1.jpg');
+}
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    table {
+      border-collapse: collapse;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #eaeaea;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body bgcolor="crimson" >
+  
+
+  <h2>Total Number of Persons Voted: </h2>
+  <br>
+  <h2>Total Number of Persons Voted </h2>
+
+
+
+
+  <script>
+    function populateResults() {
+        var candidate1_votes = localStorage.getItem('candidate1');        
+        candidate1.textContent = candidate1_votes;
+
+        
+        var candidate2_votes = localStorage.getItem('candidate2');        
+        candidate2.textContent = candidate2_votes;
+        
+   
+
+   
+        var candidate3_votes = localStorage.getItem('candidate3');        
+        candidate3.textContent = candidate3_votes;
+       
+    
+
+    
+        var candidate4_votes = localStorage.getItem('candidate4');        
+        candidate4.textContent = candidate4_votes;
+    
+
+    
+        var candidate5_votes = localStorage.getItem('candidate5');        
+        candidate5.textContent = candidate5_votes;}
+   
+  
+    //window.onload = populateResult;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+
+    <h1>Results</h1>
+    <h2>Total Votes Available: <span id="total_available">1239</span></h2>
+    <h2>Total Votes Casted: <span id="total_casted">1239</span></h2>
+    <h2>Percentage Votes Casted: <span id="percentage">65</span>%</h2>
+  
+    <script>
+        function displayResult(){
+
+            let total_available1 = parseFloat(localStorage.getItem('total_votes'));
+            total_available.textContent = localStorage.getItem('total_votes');           
+            let candidate1_votes = localStorage.getItem('candidate1');     
+            let candidate2_votes = localStorage.getItem('candidate2');     
+            let candidate3_votes = localStorage.getItem('candidate3');     
+            let candidate4_votes = localStorage.getItem('candidate4');     
+            let candidate5_votes = localStorage.getItem('candidate5');     
+
+            let total_casted1 = parseFloat(candidate1_votes) + parseFloat(candidate2_votes)+ parseFloat(candidate3_votes) + parseFloat(candidate4_votes)+ parseFloat(candidate5_votes);
+            let percentage_votes = eval(total_casted1) *100 / total_available1;
+            total_casted.textContent = total_casted1;
+            percentage.textContent = Math.round(percentage_votes);
+        }
+
+        window.onload = displayResult;
+    </script>
+
+</body>
+</html>

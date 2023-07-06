@@ -1,0 +1,17 @@
+1. Language toggling - 2
+2. REsult of Voting -- 1
+3. Generate OTP button - 3
+
+
+// Step 1: Retrieve the value from local storage
+var key = "myKey";
+var value = localStorage.getItem(key);
+
+// Step 2: Convert the retrieved value to a number
+var numericValue = parseFloat(value);
+
+// Step 3: Increase the numeric value
+var increasedValue = numericValue + 1;
+
+// Step 4: Store the updated value back into local storage
+localStorage.setItem(key, increasedValue.toString());
